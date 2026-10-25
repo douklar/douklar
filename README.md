@@ -1,75 +1,57 @@
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img alt="Douklar. Move your data between accounts, and keep the record." src="assets/banner-light.png" width="100%">
+</picture>
+</p>
+
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/douklar/douklar/main/assets/logo.png" />
-  <img src="https://raw.githubusercontent.com/douklar/douklar/main/assets/logo-for-light-mode.png" alt="Douklar DevOps Tools" width="220" />
-</picture>
+[![Website](https://img.shields.io/badge/Website-douklar.app-1A2430?style=for-the-badge&logo=googlechrome&logoColor=2BD4E6&labelColor=10151C)](https://douklar.app)
+[![Docs](https://img.shields.io/badge/Docs-douklar.app%2Fdocs-1A2430?style=for-the-badge&logo=readthedocs&logoColor=2BD4E6&labelColor=10151C)](https://douklar.app/docs)
+[![Maintainer](https://img.shields.io/badge/Maintainer-hummatovic-1A2430?style=for-the-badge&logo=github&logoColor=2BD4E6&labelColor=10151C)](https://github.com/hummatovic)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-10151C?style=for-the-badge&logo=linkedin&logoColor=2BD4E6)](https://www.linkedin.com/in/hummatovic/)
 
-# Douklar — DevOps Automation Tooling
-**Automating the repetitive work that DevOps Engineers deal with every day.**
-Built to save time, reduce toil, and make powerful tooling accessible to everyone through open source.
-<br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/douklar)
-[![Owner](https://img.shields.io/badge/Owner-Nijat%20Hummatović-0A66C2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hummatovic)
 </div>
 
 ---
 
-## What is Douklar?
+## Douklar
 
-Douklar is a DevOps automation project founded by **[Nijat Hummatović](https://github.com/hummatovic)** — a Cloud & DevOps Engineer specialising in AWS, Terraform, and Kubernetes.
+Douklar moves AWS data between accounts and Regions: **ECR images, S3 objects, CodeCommit repositories and DynamoDB items**. One workflow covers all four: account profiles, discovery, mappings, a read-only preflight, a reviewed run, verification, and a record of every run.
 
-The mission is simple: **if a DevOps Engineer is doing it repeatedly, there should be a tool for it.** Douklar builds that tooling — a mix of open source and private tools that cover the full DevOps lifecycle, from infrastructure provisioning to security scanning. Not tied to a single cloud or platform.
-
-Every tool is built with two goals in mind:
-
-- Save real time and energy for DevOps Engineers
-- Make powerful automation accessible to the community through open source
+- **Self-hosted.** A web console and a `douklar` CLI that you run yourself. There is no hosted version.
+- **Internal test phase.** Douklar is not in production yet. Its docs are published for internal testers and as an introduction.
+- **AWS first.** Other clouds are planned. Need one? [Ask for it](https://douklar.app/request).
 
 ---
 
 ## Projects
 
-### 🔓 Open Source
+| Project | What it does | Licence |
+| --- | --- | --- |
+| **[Douklar](https://douklar.app)** | Moves ECR, S3, CodeCommit and DynamoDB data between AWS accounts and Regions. Source not public yet. | AGPL-3.0-or-later, can change before the public release |
+| **[SSM Explorer](https://github.com/douklar/ssm-explorer)** | Search, browse, diff and export AWS SSM Parameter Store parameters from your terminal. Read-only. | MIT |
+| **[Agent Workspace](https://github.com/douklar/terraform-aws-agent-workspace)** | Terraform module for a personal AI agent workspace on AWS, reached through Session Manager with no open ports.<br>[![Terraform Registry](https://img.shields.io/badge/Terraform%20Registry-douklar%2Fagent--workspace-1A2430?style=flat-square&logo=terraform&logoColor=2BD4E6&labelColor=10151C)](https://registry.terraform.io/modules/douklar/agent-workspace/aws/latest) | Apache-2.0 |
+| **[file-safe](https://github.com/douklar/file-safe)** | Scans files and directories against the VirusTotal API, for public downloads in network-isolated Linux environments. | None yet |
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [terraform-aws-agent-workspace](https://github.com/douklar/terraform-aws-agent-workspace) | Terraform module that provisions a personal AI agent workspace on AWS — Ubuntu 24.04 EC2 with Claude Code, VS Code Server, and Tailscale, accessed via Session Manager with no open ports<br/>[![Terraform Registry](https://img.shields.io/badge/Terraform%20Registry-douklar%2Fagent--workspace-7B42BC?style=flat-square&logo=terraform&logoColor=white)](https://registry.terraform.io/modules/douklar/agent-workspace/aws/latest) | Terraform / HCL |
-| [ssm-explorer](https://github.com/douklar/ssm-explorer) | CLI tool to search, browse, diff and export AWS SSM Parameter Store parameters | Python |
-| [file-safe](https://github.com/douklar/file-safe) | Scans files and directories against VirusTotal API — designed for public downloads in network-isolated Linux environments | Python |
-
-### 🔒 Private
-
-| Project | Description |
-|---------|-------------|
-| DevCo | Automates building Devcontainers and installing AI agents, harnesses, and tooling |
-| Sync | AWS sync and inventory operations for data migration and copy workflows |
+Each repository has its own README, licence and contribution guide. Bugs and ideas go in that repository's issues.
 
 ---
 
-## Tech Stack
+## Built with
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
----
-
-## Contributing
-
-Open source tools under Douklar welcome contributions. If you find a bug, have a feature request, or want to contribute — open an issue or pull request in the relevant repository.
-
-If you find the tooling useful, consider starring the repos — it helps others discover them.
+![AWS](https://img.shields.io/badge/AWS-10151C?style=for-the-badge&logo=amazonwebservices&logoColor=2BD4E6)
+![Python](https://img.shields.io/badge/Python-10151C?style=for-the-badge&logo=python&logoColor=2BD4E6)
+![FastAPI](https://img.shields.io/badge/FastAPI-10151C?style=for-the-badge&logo=fastapi&logoColor=2BD4E6)
+![React](https://img.shields.io/badge/React-10151C?style=for-the-badge&logo=react&logoColor=2BD4E6)
+![Terraform](https://img.shields.io/badge/Terraform-10151C?style=for-the-badge&logo=terraform&logoColor=2BD4E6)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-10151C?style=for-the-badge&logo=cloudflare&logoColor=2BD4E6)
 
 ---
 
-## Owner
+## Contact
 
-Douklar is maintained by **[Nijat Hummatović](https://github.com/hummatovic)** — Cloud & DevOps Engineer.
+Questions, licensing and platform requests: **douklar@hummatovic.com**. Douklar is made by [Nijat Hummatović](https://github.com/hummatovic).
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hummatovic/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hummatovic)
+<img alt="GitHub activity for douklar over the last 12 months" src="assets/activity.svg" width="100%">
